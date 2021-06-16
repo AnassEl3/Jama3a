@@ -1,0 +1,169 @@
+:root{
+    --low-color: #edeeee;
+    --medium-color: #e2e2e2;
+    --heigh-color: #878887;
+    --shadow-color: rgb(54, 54, 54);
+
+}
+body{
+    background-color: #e2e2e2;
+    margin: auto;
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/*--------------------------------- header -------------------------------------*/
+header{
+    background-color: #0660a5;
+    height: auto;
+    background-image: linear-gradient(to left,var(--low-color),var(--medium--color));
+    background-image: url("img/header\ background.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+header .symbol img{
+    height: 40%;
+    width: 40%;
+}
+header .name{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+header .name h1 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 3px;
+    font-size: 70px;
+}
+header .logo img{
+    height: 40%;
+    width: 40%;
+    
+}
+/*--------------------------------- nav -------------------------------------*/
+nav{
+    background-image: linear-gradient(to right,#29b3da,#05375c);
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+nav a{
+    height: 60px;
+    width: auto;
+    padding: 0 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100%;
+    transition: background-color .5s,outline .2s,color .5s,padding .5s;
+}
+nav a:hover{
+    background-color: #e2e2e2;
+    color: #16aed8;
+    font-weight: bold;
+    transition: background-color .5s,outline .2s,color .6s;
+}
+/*------------ JS -------------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.smallnav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.smallnav a{
+    display: none;
+}
+.smallnav::before{
+    content: "\2630";
+    color: #ffffff;
+    font-size: 34px;
+    padding: 0 10%;
+}
+.showsmallnav{
+    flex-direction: column;
+    align-items: center;
+}
+.showsmallnav a{
+    display: block;
+    border-bottom: 2px solid black;
+    height: 50px;
+    width: 90%;
+}
+.smallsticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+/*--------------------------------- section -------------------------------------*/
+section{
+    margin: auto;
+    z-index: -1;
+    max-width: 1100px;
+}
+#workspace{
+    border: none;
+    margin: auto;
+}
+/*--------------------------------- footer -------------------------------------*/
+footer{
+    height: auto;
+    background-color: #05375c;
+    border-top: 4px solid #0660a5;
+    border-radius: 0px 0px 20px 20px ;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    color: #ffffff;
+    direction: ltr;
+}
+footer p{
+    font-size: 100%;
+}
+footer .creator{
+    text-decoration:underline;
+    text-decoration-color: #ffffff;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sticky {
+        width: 100%;
+        height: auto;
+        
+    }
+    header .name{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 620px){
+    header .name{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 380px){
+    header .name{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 290px){
+    header .name{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,98 @@
+body{
+    margin: auto;
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-bottom: 3px solid #074c81;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom,#0a61a3,#0c73c2);
+}
+.parts{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    border-bottom: 3px solid #074c81;
+    margin-bottom: 10px;
+}
+.allcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border-left: 3px solid #707070;
+    border-right: 3px solid #707070;
+}
+.allcontent a{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(187, 187, 187, 0.671);
+    margin: 5px 0;
+    transition: background-color .5s,height .5s;
+}
+.allcontent a:hover{
+    cursor: pointer;
+    height: 60px;
+    background-color: rgba(226, 226, 226, 0.822);
+    transition: background-color .5s,height .5s;
+}
+.showcontent{
+    background-color: rgb(209, 210, 211);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+/*--------------------------------- imgs -------------------------------------------------------------------------*/
+.imgs a img{
+    width: auto;
+    height: 100%;
+}
+.showcontent a{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.showcontent a img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+/*--------------------------------- videos -------------------------------------------------------------------------*/
+.videos a video{
+    width: auto;
+    height: 100%;
+}
+.showcontent video{
+    max-width: 80%;
+    max-height: 80%;
+    min-height: auto;
+    max-width: auto;
+}
+
+
+
+@media screen and (max-width: 550px){
+    .parts{
+        height: 300px;
+    }
+}

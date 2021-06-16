@@ -1,0 +1,116 @@
+body{
+    margin: auto;
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+.associations{
+    display: flex;
+    flex-direction: column;
+}
+.associations .part{
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+.associations .part h1{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 5px 50px;
+}
+/*--------------------------------- text -------------------------------------------------------------------------*/
+.associations .text{
+    height: auto;
+}
+.associations .text p{
+    margin: 10px;
+}
+/*--------------------------------- infos -------------------------------------------------------------------------*/
+.associations .infos{
+    display: flex;
+    flex-direction: row;
+}
+.associations .infos h2{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    height: auto;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin: 5px 50px;
+}
+.associations .infos .enterinfos{
+    margin: 5px;
+    margin-right: 10%;
+}
+.associations .infos .enterinfos{
+    display: flex;
+    flex-direction: column;
+}
+.associations .infos .enterinfos label{
+    margin: 20px;
+}
+.associations .infos .enterinfos .btn{
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 100%;
+    font-family: 'Changa', sans-serif;
+    border-bottom: 4px solid #258f0b;
+    background-color: #30c40c;
+    transition: background-color .5s;
+}
+.associations .infos .enterinfos .btn:hover{
+    background-color: #3aec0e;
+    border-bottom: 2px solid #258f0b;
+    transition: background-color .5s;
+}
+.associations .infos .error{
+    display: none;
+    background-color: #ff00008c;
+    padding: 20px;
+    margin: 10px;
+    color: #ffffff;
+}
+.associations .infos .showerror{
+    display: block;
+}
+/*--------------------------------- login*/
+.associations .infos .login{
+    width: 50%;
+    border-left: 1px solid black;
+}
+.associations .infos .login #formlogin:invalid{
+    outline: 2px solid #ff00008c;
+}
+/*--------------------------------- joining*/
+.associations .infos .joining{
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .associations .infos{
+        flex-direction: column;
+    }
+    .associations .infos .enterinfos label{
+        display: flex;
+        flex-direction: column;
+    }
+    .associations .infos .login{
+        width: 100%;
+    }
+    .associations .infos .joining{
+        width: 100%;
+    }
+}
+

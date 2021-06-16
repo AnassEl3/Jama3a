@@ -1,0 +1,38 @@
+/*--------------------------------------- index ----------------------------------------------*/
+/*--------------------------------------- header */
+header .titlefont{
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 3px;
+    font-size: 70px;
+}
+/*--------------------------------------- navigation */
+nav .optinsfont{
+    font-size: 17px;
+}
+/*--------------------------------------- footer */
+footer p{
+    font-size: 20px;
+}
+footer .creator{
+    text-decoration:underline;
+    text-decoration-color: #ffffff;
+}
+.connect .options a{
+    font-size: 20px;
+}
+/*--------------------------------------- nv1 ----------------------------------------------*/
+/*--------------------------------------- slideshow */
+.slidesshow .slidetitle{
+    font-size: 20px;
+}
+.slidesshow .butt{
+    font-size: 50px;
+}
+/*--------------------------------------- aside */
+.aside .parts h1{
+    font-size: 20px;
+}
+/*--------------------------------------- main */
+.main .parts h1{
+    font-size: 20px;
+}

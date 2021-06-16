@@ -1,0 +1,156 @@
+body{
+    background-color: #ffffff;
+    direction: rtl;
+    margin: auto;
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+.imgX{
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    width: 100px;
+}
+.imgY{
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+}
+.allcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--------------------------------- head -------------------------------------*/
+.allcontent .head{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.allcontent .head a{
+    display: block;
+    text-decoration: none;
+    height: auto;
+    margin: 5px;
+    width: 250px;
+    text-align: center;
+    background-color: #2377f5;
+    color: #ffffff;
+}
+.allcontent .head a:hover{
+    border: 5px solid #083d8d;
+    margin: 0px;
+}
+.allcontent .head div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.allcontent .head .firstdiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.allcontent .head .secounddiv{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.allcontent .head .leader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    margin: 5px;
+    width: 250px;
+    text-align: center;
+    background-color: #2377f5;
+    color: #ffffff;
+}
+.allcontent .head .leader:hover{
+    background-color: #3d8bff;
+    border: 5px solid #083d8d;
+    margin: 0px;
+}
+.allcontent .head .blowleader{
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*--------------------------------- body -------------------------------------*/
+.allcontent .body{
+    border-top: 6px solid #0a61b2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+.allcontent .body a{
+    display: block;
+    text-decoration: none;
+    height: auto;
+    margin: 5px;
+    width: 300px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+.allcontent .body .bigclass{
+    height: 100px;
+    background-image: linear-gradient(to bottom,#2377f5,#1b61ca);
+}
+.allcontent .body a:hover{
+    border: 5px solid #083d8d;
+    margin: 0px;
+}
+.allcontent .body .class{
+    margin: 0 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 5px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.allcontent .body a .classtitle{
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 130%;
+}
+.allcontent .body .miniclass{
+    background-color: #0244a7;
+}
+.allcontent .body a .minititle{
+    text-decoration: underline;
+    color: #ffffff;
+}

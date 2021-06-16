@@ -1,0 +1,99 @@
+body{
+    margin: auto;
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+    height: 110;
+}
+p{
+    margin: 0;
+}
+
+
+.councilmembers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.councilmembers h1{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 3px solid #414141;
+    margin: 10px 10px;
+    background-color: #a1a1a1;
+    border-radius: 10px 10px 0 0;
+}
+.councilmembers .member{
+    background-color: rgb(214, 214, 214);
+    border-right: 2px solid #414141;
+    border-bottom: 2px solid #414141;
+    border-radius: 15px;
+    margin: 10px;
+    width: 25%;
+    min-width: 250px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.councilmembers .member .imgs{
+    width: auto;
+    height: 50%;
+}
+.councilmembers .member img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #414141;
+    border-radius: 15px;
+}
+.councilmembers .member .face{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 110px;
+    height: 130px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.councilmembers .member .party{
+    width: 110px;
+    height: 130px;
+}
+.councilmembers .member .party h6{
+    margin: 0;
+    font-size: 15px;
+}
+.councilmembers .member .party .partyimg{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.councilmembers .member .infos{
+    width: 100%;
+    font-size: 15px;
+}
+.councilmembers .member .infos p{
+    margin: 20px 0px;
+    color: rgb(0, 0, 0);
+}
+.councilmembers .member .infos .answer{
+    color: rgb(5, 36, 177);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 81, 255);
+}
+.councilmembers .member .infos .work{
+    color: rgb(4, 211, 31);
+}

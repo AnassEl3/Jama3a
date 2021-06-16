@@ -1,0 +1,40 @@
+body{
+    margin: auto;
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+.others table{
+    width: 100%;
+}
+.others tr{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.others td{
+    height: 100px;
+    width: 30%;
+    border-bottom: 3px solid #505050;
+}
+.others td img{
+    height: 100%;
+    width: auto;
+    border: 2px solid #505050;
+}
+.others td a{
+    background-color: rgb(40, 199, 19);
+    border-bottom: 3px solid rgb(23, 129, 8);
+    font-size: 18px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    transition: background-color .5s;
+}
+.others td a:hover{
+    background-color: rgb(41, 238, 15);
+    transition: background-color .5s;
+}
+
+

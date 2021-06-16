@@ -1,0 +1,43 @@
+:root{
+    --low-color: #fbfcfc;
+    --medium-color: #e2e2e2;
+    --heigh-color: #888887;
+    --shadow-color: rgb(54, 54, 54);
+
+}
+body{
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+
+
+.leaderwords{
+    border-top: 3px solid var(--heigh-color);
+    border-bottom: 3px solid var(--heigh-color);
+    border-radius: 20px;
+    padding: 20px 10px 100px 10px;
+    margin: 10px 0;
+}
+.leaderimg{
+    text-align: center;
+}
+.leaderimg img{
+    border: 3px solid var(--heigh-color);
+    width: 25%;
+}
+.leadertext{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.leadername{
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 5px 10px;
+    float: left;
+}

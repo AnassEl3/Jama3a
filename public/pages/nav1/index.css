@@ -1,0 +1,546 @@
+/*
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Lalezar', cursive;
+*/
+:root{
+    --low-color: #fbfcfc;
+    --medium-color: #e2e2e2;
+    --heigh-color: #888887;
+    --shadow-color: rgb(54, 54, 54);
+
+    --fontsize-aside-big: 15px;
+    --fontsize-aside-medium: 16px;
+    --fontsize-aside-small: 14px;
+}
+body{
+    margin: auto;
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+}
+p{
+    margin: 0;
+}
+.nav1{
+    display: flex;
+    flex-direction: column;
+}
+.allcontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*--------------------------------- slidesshow -------------------------------------------------------------------------*/
+.slidesshow{
+    position: relative;
+    background-color: #024c92;
+    border: 3px solid #024c92;
+    border-radius: 20px;
+    height: 500px;
+    margin-top: 10px;
+}
+.slidesshow .slidetitle{
+    position: absolute;
+    visibility: hidden;
+    background-color: #024c9267;
+    color: #ffffff;
+    width: 100%;
+    height: 11%;
+    font-size: 20px;
+    bottom: 0;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    transition: background-color .3s;
+}
+.slidesshow .showtitle{
+    visibility: visible;
+}
+.slidesshow .slidetitle a{
+    padding: 0px 45%;
+    color: #ffffff;
+}
+.slidesshow .slidetitle:hover{
+    background-color: #024c92;
+    transition: background-color .3s;
+}
+.slidesshow .butt{
+    background-color: #024c92;
+    opacity: .5;
+    border-radius: 10px;
+    position: absolute;
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+    top: 40%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+}
+.slidesshow .butt:hover{
+    background-color: #0568c5;
+    opacity: .9;
+    transition: background-color .3s,opacity .3s;
+}
+.slidesshow .nextbutt{
+    right: 0px;
+}
+.slidesshow .previousbutt{
+    left: 0px;
+}
+.slidesshow .slide{
+    position: absolute;
+    border-radius: 17px;
+    height: 100%;
+    transition: width .5s;
+}
+.nextslideO{
+    right: 0;
+    width: 100%;
+    transition: width .5s;
+}
+.nextslideC{
+    left: 0px;
+    width: 0%;
+    transition: width .5s;
+}
+.previousslideO{
+    left: 0;
+    width: 100%;
+    transition: width .5s;
+}
+.previousslideC{
+    right: 0px;
+    width: 0%;
+    transition: width .5s;
+}
+
+/*--------------------------------- asides -------------------------------------------------------------------------*/
+.aside{
+    border-radius: 20px;
+    margin:  0 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.aside .parts{
+    border-bottom: 4px solid #074c81;
+    border-radius: 20px 20px 0 0;
+    margin: 20px 5px 2px 5px;
+    background-color: #ffffff;
+}
+.aside .parts h1{
+    margin: 0;
+    border-bottom: 3px solid #074c81;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom,#0a61a3,#0c73c2);
+}
+/*--------------------------------- leader */
+.aside .leader{
+    height: auto;
+    width: 95%;
+    text-align: center;
+}
+.aside .leader img{
+    border: 3px solid var(--heigh-color);
+    border-radius: 10px;
+    width: 80px;
+    height: 120px;
+}
+.aside .leaderwords{
+    height: 40px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.aside .leaderwords p{
+    font-size: var(--fontsize-aside-small);
+    margin: 0 30px;
+}
+.aside .leaderwords p::after{
+    content: " ...";
+}
+.aside .leader a{
+    font-size: var(--fontsize-aside-medium);
+}
+/*--------------------------------- news */
+.aside .news{
+    width: 95%;
+    height: auto;
+    padding-bottom: 20px; 
+}
+.aside .news .thenew{
+    background-color: rgb(230, 227, 227);
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.aside .news .thenew a{
+    font-size: 25px;
+    margin: 0;
+}
+.aside .news .thenew a::after{
+    content: ": ";
+}
+.aside .news .thenew h4{
+    font-size: 20px;
+    margin: 0;
+}
+.aside .news .thenew h4::before{
+    content: "(";
+}
+.aside .news .thenew h4::after{
+    content: ")";
+}
+/*--------------------------------- projects */
+.aside .projects{
+    height: auto;
+    width: 95%;
+    padding-bottom: 20px;
+}
+.aside .projects .options{
+    display: flex;
+    flex-direction: column;
+}
+.aside .projects .project{
+    background-image: linear-gradient(to left,var(--medium-color),#ffffff);
+    margin: 5px;
+    height: 50px;
+    width: 70%;
+    border: 3px solid var(--heigh-color);
+    border-left: 10px double var(--medium-color);
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: width .5s,border-left .5s,background-color .5s,color .5s;
+}
+.aside .projects .project:hover{
+    background-color: var(--medium-color);
+    border-left: 5px double var(--heigh-color);
+    width: 90%;
+    color: var(--heigh-color);
+    transition: width .5s,border-left .5s,background-color .5s,color .5s;
+}
+/*--------------------------------- gallery */
+.gallery{
+    height: auto;
+    width: 95%;
+    margin: 20px 5px 2px 5px;
+    font-size: 160%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #1093df;
+    border-bottom: 8px solid #055888;
+    border-radius: 10px;
+    background-image: url("img/gallery.png");
+    background-attachment: local;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .5s,background-size .5s,font-size .5s;
+}
+.gallery:hover{
+    background-color: #12a6fc;
+    background-size: 70%;
+    font-size: 180%;
+    transition: background-color .5s,background-size .5s,font-size .5s;
+}
+.gallery .gallerybg{
+    height: 100%;
+    width: 100%;
+    background-image: url("img/gallery.png");
+    background-attachment: local;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gallery a{
+    color: #ffffff;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+/*--------------------------------- main -------------------------------------------------------------------------*/
+.main{
+    margin: 20px 5px;
+    width: 66%;
+    height: 100%;;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 20px;
+}
+.main .parts{
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.main .parts h1{
+    border-bottom: 3px solid rgb(2, 19, 173);
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(5, 54, 146);
+    margin: 0px 50px;
+}
+/*--------------------------------- mini navigation */
+.mininav{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+.mininav .mininavbox{
+    margin: 2px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+.mininav .mininavbox a{
+    background-color: #075da0;
+    padding: 30px;
+    display: block;
+    font-size: 22px;
+    color: var(--low-color);
+    border-radius: 5px;
+    border-bottom: 3px solid var(--shadow-color);
+    border-right: 3px solid var(--shadow-color);
+    transition: color .5s,background-color .5s;
+}
+.mininav .mininavbox a:hover{
+    position: relative;
+    background-color: #088bf0;
+    transition:background-color .5s;
+    bottom: 10px;
+}
+/*--------------------------------- connect */
+.connect{
+    height: auto;
+    padding-bottom: 10px;
+}
+.connect .options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connect .options .option{
+    position: relative;
+    background-color: #088bf0;
+    border: 2px solid #024c92;
+    border-radius: 10px;
+    display: flex;
+    margin: 5px 0px;
+    height: 80px;
+    width: 50%;
+    overflow: hidden;
+}
+.options .option img{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    height: 96%;
+    width: auto;
+    height: 100%;
+}
+.connect .options a{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    padding: 20px 30% 0 0;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #000000;
+    text-decoration: none;
+    color: #ffffff;
+    transition: font-size .5s,color .5s,padding .5s,background-color .1s;
+}
+.connect .options a:hover{
+    background-color: #ffffff;
+    text-shadow: none;
+    font-size: 18px;
+    padding: 20px 50px 0 0;
+    color: #000000;
+    transition: font-size .5s,color .5s,padding .5s,background-color .1s;
+}
+/*--------------------------------- informations */
+.informations{
+    height: auto;
+    padding-bottom: 15px;
+}
+.informations .definitions{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 10px 30px;
+}
+.informations .definition{
+    position: relative;
+    background-image: linear-gradient(to left,#e4e4e4,#ffffff);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    border: 2px solid black;
+}
+.informations .definition .description{
+    position: absolute;
+    height: auto;
+    width: 55%;
+    right:50px;
+    margin: 20px;
+    overflow: hidden;
+    word-wrap: wrap;
+}
+.informations .definition .description .titletext{
+    font-size: 18px;
+}
+.informations .definition .description .titletext::after{
+    content: ":";
+}
+.informations .definition .description .titledesc{
+    font-size: 15px;
+    height: 100%;
+}
+.informations .definition .pull{
+    position: absolute;
+    background-color: #024c92;
+    order: 1;
+    border-radius: 10px 0px 0px 10px;
+    width: 50px;
+    height: 100%;
+    right: 0%;
+    transition: right .5s;
+}
+.informations .definition .pull:hover{
+    cursor: pointer;
+}
+.informations .definition .text{
+    position: absolute;
+    background-color: #e4e4e4;
+    width: 0%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    transition: width .5s;
+    word-wrap: wrap;
+}
+.informations .definition .text p{
+    margin: 15px;
+}
+.informations .definition .pullclicked{
+    right: 69%;
+    transition: right .5s;
+}
+.informations .definition .pulltext{
+    width:  69%;
+    transition: width .5s;
+}
+.informations .definition .image{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 80%;
+    margin: 10px;
+    border: 3px solid var(--heigh-color);
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .slidesshow{
+        height: 400px;
+    }
+    .informations .definition .pullclicked{
+        right: 80%;
+    }
+    .informations .definition .pulltext{
+        width:  80%;
+    }
+}
+@media screen and (max-width: 650px){
+    .allcontent{
+        justify-content: center;
+    }
+    .aside{
+        width: 90%;
+    }
+    .main{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
+    .slidesshow{
+        height: 300px;
+    }
+    .informations .definition .image{
+        display: none;
+    }
+    .slidesshow .butt{
+        font-size: 60px;
+    }
+    .connect .options .option{
+        background-color: #026fd6;
+        border: 2px solid var(--heigh-color);
+        margin: 5px 0px;
+        height: 80px;
+        width: 60%;
+        text-align: center;
+    }
+    .options .option img{
+        display: none;
+    }
+    .connect .options a{
+        padding: 20px 0 0 0;
+        font-size: 15px;
+    }
+    .connect .options a:hover{
+        font-size: 18px;
+        padding: 18px 0 0 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .slidesshow{
+        height: 200px;
+    }
+    .slidesshow .slidetitle{
+        font-size: 10px;
+        opacity: .6;
+        transition: opacity .3s;
+    }
+    .slidesshow .butt{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 370px){
+    .informations .definition .pullclicked{
+        right: 80%;
+    }
+    .informations .definition .pulltext{
+        width:  80%;
+    }
+    .informations .definition .description{
+        
+        position: absolute;
+        height: auto;
+        width: 70%;
+        right:50px;
+        margin: 20px;
+        overflow: hidden;
+        word-wrap: wrap;
+    }
+}
+@media screen and (max-width: 200px){
+    .slidesshow{
+        height: 100px;
+    }
+    .slidesshow .butt{
+        font-size: 20px;
+    }
+}
+
+
+
